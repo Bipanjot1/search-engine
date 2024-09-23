@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: black; /* Black background for the circle */
+    padding: 20px;
+    border-radius: 50%; /* Makes the container circular */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 400px; /* Ensure equal width and height for the circle */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    color: white; /* Ensure text inside is white for contrast */
+}
+
+
+
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#search-input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #35dcc3;
+    color: white;
+}
+
+button:hover {
+    background-color: #35dcc3;
+}
+
+.action-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.action-container button {
+    width: 48%;
+}
+
+/* Red color for Clear History button */
+#clear-history-btn {
+    background-color: #35dcc3; /* Red color */
+    color: white;
+}
+
+#clear-history-btn:hover {
+    background-color: #23c8aa; /* Darker red on hover */
+}
+
+.history-container {
+    text-align: left;
+    display: none; /* Hide history container by default */
+}
+
+#search-history-list {
+    list-style: none;
+    padding: 0;
+}
+
+#search-history-list li {
+    padding: 8px;
+    background-color: #333; /* Darker background for better contrast */
+    color: white; /* White text color */
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#search-btn {
+    background-color: #28a745; /* Green color */
+    color: white;
+}
+
+#search-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
